@@ -1,14 +1,12 @@
 package main
 
 import (
-	"crypto/sha256"
 	"fmt"
-	"io/ioutil"
-	"os"
 
 	"github.com/spf13/cobra"
-	// "samli.gitlab.com/dashx/dashx"
-	// "samli.gitlab.com/dashx/dashutil"
+	"gitlab.com/dashx/dashutil"
+	"gitlab.com/dashx/dashx/btcec"
+	"gitlab.com/dashx/dashx/chaincfg"
 )
 
 var cmd = &cobra.Command{
@@ -19,20 +17,18 @@ var cmd = &cobra.Command{
 }
 
 func cmdFunc(c *cobra.Command, inp []string) {
-	i, err := ioutil.ReadAll(os.Stdin)
+	sk, err := btcec.NewPrivateKey(btcec.S256())
 	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		return
+		panic(err)
 	}
-	h := sha256.New()
-	h.Write(i)
-	hash1 := h.Sum(nil)
 
-	h = sha256.New()
-	h.Write(hash1)
-	hash2 := h.Sum(nil)
+	wif, err := dashutil.NewWIF(sk, &chaincfg.TestNet3Params, true)
+	if err != nil {
+		panic(err)
+	}
 
-	fmt.Printf("%64x\n", hash2)
+	//fmt.Printf("sk bytes = %64x\n", bytes)
+	fmt.Println(wif.String())
 }
 
 func main() {
