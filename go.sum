@@ -9,6 +9,8 @@ github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMo
 github.com/hashicorp/hcl v1.0.0/go.mod h1:E5yfLk+7swimpb2L/Alb/PJmXilQ/rhwaUYs4T20WEQ=
 github.com/inconshreveable/mousetrap v1.0.0/go.mod h1:PxqpIevigyE2G7u3NXJIT2ANytuPF1OarO4DADm73n8=
 github.com/magiconair/properties v1.8.0/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
+github.com/matryer/is v1.2.0/go.mod h1:2fLPjFQM9rhQ15aVEtbuwhJinnOqrmgXPNdZsdwlWXA=
+github.com/minio/blake2b-simd v0.0.0-20160723061019-3f5f724cb5b1/go.mod h1:pD8RvIylQ358TN4wwqatJ8rNavkEINozVn9DtGI3dfQ=
 github.com/mitchellh/go-homedir v1.1.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
 github.com/pelletier/go-toml v1.2.0/go.mod h1:5z9KED0ma1S8pY6P1sdut58dfprrGBbd/94hg7ilaic=
@@ -29,10 +31,15 @@ gitlab.com/dashx/dashutil v0.0.0-20190621195151-051896fef3b9 h1:ql2E0mxYpmZcEl8q
 gitlab.com/dashx/dashutil v0.0.0-20190621195151-051896fef3b9/go.mod h1:iY1fx7LglmPvRv8Px3eBH+WOVlLktvN9iz9ApUZMSKo=
 gitlab.com/dashx/dashx v0.0.0-20181001152421-232882fe44f0 h1:SD85fpLMhEhMB9BnXZ7z5zQ0fVlV+V4AnLQIF8ZG/QE=
 gitlab.com/dashx/dashx v0.0.0-20181001152421-232882fe44f0/go.mod h1:2x+SmLSHOSDZr/EG6Xacc7zkN7Obys/dh51hk9S92u0=
+gitlab.com/nmarley/go-bls-signatures v0.0.0-20191019005850-e01710ebdef9 h1:CrNQGwyftm2uIEyR4N5xxcDVoE7Mpu1KqwdHAsdjWpM=
+gitlab.com/nmarley/go-bls-signatures v0.0.0-20191019005850-e01710ebdef9/go.mod h1:Nxr0wA8H+J3Mdc65yL6sbF0LMWmOdmWDu63ryjpICVU=
 gitlab.com/samli88/go-x11-hash v0.0.0-20180610202919-e5ce9e6dea1c h1:CEuSKbMK/50v0hRz7jucpFnFaSE1NtvswR1WnY+m86M=
 gitlab.com/samli88/go-x11-hash v0.0.0-20180610202919-e5ce9e6dea1c/go.mod h1:PxqaLk9U8NbjXm+b7k3w053WCkguVOt3J7THN7vZXtU=
+golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9 h1:mKdxBk7AujPs8kU4m80U72y/zjbZ3UcXC7dClwKbUI0=
 golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
+golang.org/x/sys v0.0.0-20181122145206-62eef0e2fa9b/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20181205085412-a5c9d58dba9a h1:1n5lsVfiQW3yfsRGu98756EH1YthsFqr/5mxHduZW2A=
 golang.org/x/sys v0.0.0-20181205085412-a5c9d58dba9a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
