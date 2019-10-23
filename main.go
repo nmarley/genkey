@@ -27,7 +27,8 @@ func cmdFunc(c *cobra.Command, inp []string) {
 		panic(err)
 	}
 
-	wif, err := dashutil.NewWIF(sk, &chaincfg.TestNet3Params, true)
+	// wif, err := dashutil.NewWIF(sk, &chaincfg.TestNet3Params, true)
+	wif, err := dashutil.NewWIF(sk, &chaincfg.MainNetParams, true)
 	if err != nil {
 		panic(err)
 	}
